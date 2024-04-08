@@ -1,9 +1,10 @@
 #Carpool
 
 
-This is the Node.js server files with the database code.
+*work in progress!*  
 
-To run it you'll need a MySQL database and the following files:
+
+A hybrid car pool app i'm creating for my thesis, using Node.js, MySQL, Handlebars and Apache Cordova for the mobile integration.
 
 
 *important files*
