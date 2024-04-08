@@ -1,0 +1,29 @@
+<!--Create ride menu-->
+
+<div class="container-fluid search">
+    <div class="row">
+        <div class="col ">
+            <p class="Montserrat search-message">Search for a ride!</p>
+            <p class="Montserrat search-message"> {{{message}}} </p>
+        </div>
+    </div>
+    <div class="row text-center">
+        <form action="/search" method="post" id="searchForm">
+            <div class="form-group ">
+                    <p class="form-input Montserrat ">From:</p>
+                <input type="text" class="form-control" id="DeparturePoint"  placeholder="Enter your departure point" name="departurePoint">
+                    <p class="form-input Montserrat ">To:</p>
+                <input type="text" class="form-control" id="Destination"  placeholder="Enter your destination" name="destination">
+                    <p class="form-input Montserrat">When:</p>
+                <input type="date" class="form-control" id="Date" name="date">
+                    <p class="form-input Montserrat">Number of seats:</p>
+                <input type="number" class="form-control" id="NoFreeSeats" placeholder="Enter the number of free seats" name="seats">
+            </div>
+            <button id="searchButton" type="submit" class="btn btn-light btn-lg btn-block rounded-pill search-button Montserrat">
+            Search for a ride</button>
+        </form>
+    </div>
+</div>
+
+<script src={{{autocompleteAPI}}} defer></script>
+<script type="text/javascript" src="/js/search.js"></script>

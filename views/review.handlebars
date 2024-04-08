@@ -1,0 +1,35 @@
+<!--Review Window-->
+<form action="/review/:rideId" method="post" id="reviewForm">
+    <div class="container window">
+        <div class="row">
+            <div class="col text-center ">
+                <p class="Montserrat title">Did you enjoy your ride?</p>
+                <p class="Montserrat second-title">Please leave a review!</p>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="rating">
+                <input id="rating1" type="radio" name="reviewScore" value="1">
+                <label for="rating1">1</label>
+                <input id="rating2" type="radio" name="reviewScore" value="2">
+                <label for="rating2">2</label>
+                <input id="rating3" type="radio" name="reviewScore" value="3">
+                <label for="rating3">3</label>
+                <input id="rating4" type="radio" name="reviewScore" value="4">
+                <label for="rating4">4</label>
+                <input id="rating5" type="radio" name="reviewScore" value="5">
+                <label for="rating5">5</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="reviewText">
+                <textarea type="text " name="reviewText" class="textInput"></textarea>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col text-center">
+                <button id="review" type="submit" value="Submit" class="btn btn-light btn-lg btn-block rounded-pill submit-button Montserrat"role="button">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>

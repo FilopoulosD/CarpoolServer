@@ -1,0 +1,80 @@
+<div class="container bg">
+            
+    <!--Settings Button & User's Profile Photo-->
+
+    {{#each result}}
+    <br>
+    <hr>
+        <div class="row ">
+            <div class="col-6 vertical-center">                   
+                <p class="Montserrat profile-name marg0" id="userName">Welcome {{{this.name}}} !</p> 
+            </div>
+            <div class="col-6 center-both">
+                {{#if this.photo}}
+                    <img src="https://192.168.1.5:3000/upload/{{{this.id}}}.jpg" alt="" class="avatar mx-auto d-block" >
+                {{else}}
+                    <img src="/img/img_avatar.png" alt="Avatar" class="avatar mx-auto d-block" >
+                {{/if}}
+            </div>   
+        </div>
+        {{/each}}
+        <br>
+        <div class="row text-center">
+             <p class="Montserrat">{{{message}}}</p>
+        </div>
+    <hr class="marg0">
+        <p class="Montserrat text-center moto marg0"><i>Wanna go for a ride?</i></p>
+    <hr class="marg0">
+        <div class="row rideButons">
+            <div class="col-4">
+                <div class="text-center">
+                    <button class="fa fa-plus faButton fa-lg float-right rideButtons" id="createButton"></button>
+                    <p class="Montserrat text">Create</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="text-center">
+                    <button class="fa fa-search-plus faButton fa-lg float-right rideButtons" id="searchButton"></button>
+                     <p class="Montserrat text">Search</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="text-center">
+                    <button class="fa fa-car faButton fa-lg float-right rideButtons" id="startButton"></button>
+                    <p class="Montserrat text">Start</p>
+                </div>            
+            </div>       
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="text-center">
+                    <button class="fa fa-backward  faButton fa-lg float-right rideButtons" id="pastButton"></button>
+                    <p class="Montserrat text">Past</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="text-center">
+                    <button class="fa fa-forward   faButton fa-lg float-right rideButtons" id="upcomingButton"></button>
+                    <p class="Montserrat text">Upcoming</p>
+                </div>
+            </div>
+        </div>
+
+
+
+{{!-- 
+
+        <div class="row  middle-button">
+            <div class="col-3">
+            </div>   
+            <div class="col-6 ">
+                <div class="text-center">
+                    <button class="btn btn-light btn-lg btn-block rounded-pill Montserrat" id="pastButton">Past rides</button>
+                </div>            
+            </div>   
+        </div> --}}
+        
+    
+    
+</div>

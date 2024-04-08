@@ -1,0 +1,49 @@
+<div class="container" id="container">
+      <div class="chat-log" id="chatLog">
+        
+        {{#each messages}}
+            {{#if (eq this.urlId this.receiverId)}}
+                <div class="row username-log">
+                    <p class="username Montserrat userSent">You said:</p>
+                </div>
+                <div class="row message-log ">
+                    <div class="col-11">
+                        <p class="message Montserrat userSent">{{{message}}}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="time Montserrat float-end">{{{timestamp}}}</p>
+                    </div>
+               
+                </div>
+            {{else}}
+                {{#if this.photo}}
+                    <img src="https://192.168.1.5:3000/upload/{{{this.senderId}}}.jpg" alt="" class="float-start mx-auto d-block ride-avatar">
+                {{else}}
+                    <img src="/img/img_avatar.png" alt="Avatar" class="float-start mx-auto d-block ride-avatar"  >
+                {{/if}}
+                <div class="row username-log">
+                    <p class="username Montserrat">{{{name}}} said:</p>
+                </div>
+                <div class="row message-log">
+                    <div class="col-9">
+                        <p class="message Montserrat">{{{message}}}</p>
+                    </div>
+                    <div class="col-3">
+                        <p class="time Montserrat float-end">{{{timestamp}}}</p>
+                    </div>
+               
+                </div>
+            {{/if}}
+            
+            <hr>
+        {{/each}}
+      </div>
+
+
+      <div class="input-group">
+        <input id="input" autocomplete="off" class="form-control chat-input" placeholder="Type a message...">
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-outline-secondary btn-light" id="sendButton">Send</button>
+        </div>
+      </div>
+</div>

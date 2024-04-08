@@ -1,0 +1,59 @@
+<!--Profile Photo & Review Stars-->
+<div class="container text-center">
+    
+    {{#each result}}
+        {{#if this.photo}}
+            <img src="https://192.168.1.5:3000/upload/{{{this.id}}}.jpg" alt="" class="profile-photo mx-auto d-block">
+        {{else}}
+            <img src="/img/img_avatar.png" alt="Avatar" class="profile-photo mx-auto d-block">
+        {{/if}}
+    {{/each}}
+    <input type="file" accept="image/*" capture="camera" id="fileInput" class="changeInput">
+    <button class="btn btn-light btn-block rounded-pill Montserrat change-button" id="change">Change Photo</button>
+
+    <img src="" alt="Selected Photo" id="selectedPhoto" class="selectedPhoto">
+    <div class="row">   
+        <div class="col-4">
+        </div>
+        <div class="col-4">
+            <div class="center">
+                {{#each yellowStars}}
+                <span class="fa fa-star checked"></span>
+                {{/each}}
+                {{#each blackStars}}
+                <span class="fa fa-star"></span>
+                {{/each}}
+            </div>
+        </div>
+        <div class="col-4">
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Personal Info-->
+{{#each result}}
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 pers-info">
+                <p class="Montserrat">{{{this.name}}}</p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col">
+                <div class="text-center">
+                    <button  class="btn btn-light btn-block rounded-pill Montserrat review-button" 
+                        id="reviews">Go to Reviews</button>
+                </div> 
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+{{/each}}

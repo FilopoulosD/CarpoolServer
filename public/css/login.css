@@ -1,0 +1,65 @@
+/*General Css*/
+.Kalam{
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+}
+.Montserrat{
+    font-family: 'Montserrat', cursive;
+    font-size: 16px;
+}
+body{
+    background-color: #93D8A2;
+}
+.marg0{
+    margin: 0px;
+}
+/*Main Logo*/
+.logo{
+    width: 50%;
+    height: auto;
+    border-bottom: solid black 1px;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    margin-bottom: 20px;
+}
+/*Login Window*/
+.login{
+    background-color: white;
+    border-radius: 40px;
+    padding-top: 20px;
+}
+.alert{
+    text-align: center;
+    font-size: 16px;
+}
+.welcome{
+    color: black;
+    text-align: center;
+    font-size: 22px;
+}
+.form-input{
+    text-align: center;
+}
+.submit-button{
+    border-radius: 40px;
+    background-color: #93D8A2;
+    font-size: 16px;
+    border: none;
+    padding: 3px 15px 3px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: black;
+}
+.signup-button{
+    color: black;
+    border-radius: 40px;
+    background-color: #93D8A2;
+    font-size: 16px;
+    border: none;
+    padding: 3px 15px 3px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.signup-text{
+    font-size: 13px;
+}

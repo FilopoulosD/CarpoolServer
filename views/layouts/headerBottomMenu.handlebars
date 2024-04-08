@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/bootstrap.5.0.2/bootstrap.min.css">
+    <script defer src="/js/bootstrap.5.0.2/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Local Files-->
+    
+    {{{customstyle}}}
+    
+
+    <title>{{{title}}}</title>
+    
+</head>
+<body>
+    <!--Header-->
+
+    <div class="container-fluid marg0 pad0 ">
+        <div class="row header border_at_bottom marg0">
+            <div class="col-3">
+                <button class="arrow left" onclick="history.back()" id="back"></button>
+            </div>
+            <div class="col-6">
+                <p class="Montserrat header_title">{{{headerTitle}}}</p>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+    </div>
+    
+    {{{body}}}
+
+
+    <!--Bottom Menu-->
+
+    <div class="container pad0 marg0">
+        <div class="row bottom-navbar marg0">
+            <hr class="marg0">
+            <div class="col-4 pad0 text-center">
+                <button class=" bottom-nav-button block fa fa-home" id="homeButton"></button>
+                <p class="Montserrat marg0">Home</p>
+            </div>
+            <div class="col-4 pad0 text-center">
+                <button class="bottom-nav-button block fa fa-user " id="profileButton"></button>
+                <p class="Montserrat marg0 ">Profile</p>
+            </div>
+            <div class="col-4 pad0 text-center">
+                <button class="bottom-nav-button block fa fa-bell " id="notificationsButton"></button>
+                <p class="Montserrat marg0">Notifications</p>
+            </div>
+        </div>
+    </div>
+    {{{customJs}}}
+   
+</body>
+</html>

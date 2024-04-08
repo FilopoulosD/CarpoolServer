@@ -1,0 +1,65 @@
+/*General Css*/
+
+.Kalam{
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+}
+.Montserrat{
+    font-family: 'Montserrat', cursive;
+    font-size: 16px;
+}
+body{
+    background-color: #93D8A2;
+}
+.pad0{
+    padding: 0px;
+}
+.marg0{
+    margin: 0px;
+}
+
+/*Bottom Navbar*/
+
+.bottom-navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.bottom-nav-left-button{
+    color:black;
+    background-color: #a5a5a5;
+}
+.bottom-nav-right-button{
+    color:black;
+    background-color: #a5a5a5;
+}
+.bottom-nav-middle-button{
+    color:black;
+    background-color: #e0e0e0;
+}
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*Avatar and User Name*/
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 0px;
+    border: 0px;
+  }
+ .profile-name{
+    text-align: center;
+}
+
+.logOut{
+    margin-top: 4px
+}

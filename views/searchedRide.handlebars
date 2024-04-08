@@ -1,0 +1,69 @@
+<!--Ride Info-->
+{{#each ride}}
+    <div class="container-fluid marg0 pad0 ride-window">
+        <div class="row marg0">
+            <di class="col-6">
+                <p class="Montserrat info-name">Date :</p>
+            </di>
+            <div class="col-6">
+                <p class="Montserrat information">{{{this.timeAndDate}}}</p>
+            </div>
+        </div>
+        <div class="row marg0">
+            <div class="col-6">
+                <p class="Montserrat info-name">Destination :</p>
+            </div>
+            <div class="col-6">
+                <p class="Montserrat information">{{{this.destination}}}</p>
+            </div>     
+        </div>
+        <div class="row marg0">
+            <div class="col-6">
+                <p class="Montserrat info-name">Starting Point:</p>
+            </div>
+            <div class="col-6">
+                <p class="Montserrat information">{{{this.startingPoint}}}</p>
+            </div>     
+        </div>
+        <div class="row marg0">
+            <di class="col-6">
+                <p class="Montserrat info-name">Cost:</p>
+            </di>
+            <div class="col-6">
+                <p class="Montserrat information">{{{this.cost}}} &euro;</p>
+            </div>
+        </div>
+{{/each}}
+{{#each driver}}
+        <div class="row marg0">
+            <di class="col-6">
+                <p class="Montserrat info-name">Driver Name:</p>
+            </di>
+            <div class="col-6">
+                <button class="Montserrat information profiles driver" data-driver-id={{{this.id}}}>{{{this.name}}}</button>
+            </div>
+        </div>
+{{/each}}
+        <div class="row marg0">
+            <div class="row marg0">
+                <di class="col-6">
+                    <p class="Montserrat info-name">Passenger Names:</p>
+                </di>
+                <div class="col-6">
+                    {{#each passenger}}
+                    
+                    <button class="Montserrat information profiles passengers" data-passenger-id={{{this.id}}}>{{{this.name}}}</button> <br>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        {{#each ride}}
+        <div class="row">
+        <div class="col text-center">
+            <form action="/book/:rideId" method="post">
+                <button class="btn rounded-pill review-button Montserrat" id="book"> Book this Ride</button>
+            </form>            
+        </div>
+        {{/each}}
+        </div>
+    </div>

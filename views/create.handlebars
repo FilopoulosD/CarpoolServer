@@ -1,0 +1,34 @@
+<!--Create ride menu-->
+
+    <div class="container-fluid create">
+        <div class="row">
+            <div class="col ">
+                <p class="Kalam create-message">Create a ride!</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <p class="Montserrat"> 
+                {{{message}}}
+            </p>
+            
+            <form  action="/create" method="post" id="createForm">
+                <div class="form-group ">
+                    <p class="form-input Montserrat ">From:</p>
+                        <input type="text" class="form-control" id="DeparturePoint" name="startingPoint" placeholder="Enter your departure point">
+                    <p class="form-input Montserrat " id="red">To:</p>
+                        <input type="text" class="form-control" id="Destination" name="destination"  placeholder="Enter your destination">
+                    <p class="form-input Montserrat">When:</p>
+                        <input type="date" name="timeAndDate" class="form-control" id="Date" placeholder="Enter a date">
+                    <p class="form-input Montserrat">Number of free seats</p>
+                        <input type="number" name="freeSeats" class="form-control" id="NoFreeSeats" placeholder="Enter the number of free seats">
+                </div>
+                <button type="submit" value="Create Ride" class="btn btn-secondary create-button Montserrat" role="button" id="createButton">
+                    Create Ride</button>
+                
+            </form>
+        </div>
+    </div>
+
+
+
+

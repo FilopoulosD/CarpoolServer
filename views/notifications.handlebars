@@ -1,0 +1,16 @@
+{{#each notifications}}
+
+    <div class="container">
+        <div class="row notification">
+            <div class="col text-center ">
+                <p class="Montserrat textNotif" >
+                    <button class="Montserrat user links " data-user-id="{{{this.creatorId}}}">{{{this.name}}}</button>
+                     {{{this.alertText}}} for the ride Number
+                     <button class="Montserrat ride links" data-ride-id="{{{this.rideId}}}">{{{this.rideId}}}</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+{{/each}}

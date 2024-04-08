@@ -1,0 +1,26 @@
+<!--Message 1-->
+{{#each messages}}
+<div class="container-fluid pad0 marg0 messageWindow">
+    <div class="row marg0 pad0">
+        <div class="col-2">
+            {{#if this.photo}}
+                <img src="https://192.168.1.5:3000/upload/{{{this.user_id}}}.jpg" alt="" class="float-start mx-auto d-block ride-avatar">
+            {{else}}
+                <img src="/img/img_avatar.png" alt="Avatar" class="float-start mx-auto d-block ride-avatar">
+            {{/if}}
+        </div>
+        <div class="col-7">
+            <p class="Montserrat marg0 username">{{{name}}} <br>{{truncatedMessage}}</p>
+        </div>
+
+        <div class="col-1">
+            <p class="Montserrat time">{{{timestamp}}}</p>
+        </div>
+        <div class="col-2">
+            <button class="arrow right view-details-button" data-message-id={{{this.user_id}}}></button>
+        </div>
+    </div>
+  
+</div>
+
+{{/each}}

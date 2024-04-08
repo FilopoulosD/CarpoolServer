@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <p class="Montserrat welcome-message">You have {{{num}}} ride(s) for today!</p> 
+    </div>
+</div>
+
+<!--Ride 1-->
+{{#each ride}}
+    <div class="container-fluid pad0 marg0">
+        <div class="row ride marg0 pad0">
+            <div class="col-2">
+                {{#if this.photo}}
+                    <img src="https://192.168.1.5:3000/upload/{{{this.driverId}}}.jpg" alt="" class="float-start mx-auto d-block ride-avatar">
+                {{else}}
+                    <img src="/img/img_avatar.png" alt="Avatar" class="float-start mx-auto d-block ride-avatar">
+                {{/if}}
+            </div>
+            <div class="col-2">
+                <p class="ride-start Montserrat"> Start: <br>{{startingPoint}}</p>
+            </div>
+            <div class="col-4">
+                <p class="ride-destination Montserrat"> Destination: <br>{{{destination}}}</p>
+            </div>
+            <div class="col-3">
+                <p class="ride-date Montserrat">Date:<br>{{{timeAndDate}}}</p>
+            </div>
+            <div class="col-1">  
+                <button class="view-details-button arrow right"  data-ride-id={{{id}}} data-starting={{{startingPoint}}} data-destination={{{destination}}}></button> 
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row ride-margin pad0">
+        </div>
+    </div>
+{{/each}}

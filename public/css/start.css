@@ -1,0 +1,121 @@
+/*General Css*/
+.Kalam{
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+}
+.Montserrat{
+    font-family: 'Montserrat', cursive;
+    font-size: 16px;
+}
+body{
+    background-color: #93D8A2;
+}
+.pad0{
+    padding: 0px;
+}
+.marg0{
+    margin: 0px;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    background-color: white;
+}
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-top: 30px;
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/* Header*/
+.header{
+    background-color: white;
+    height: 40px;
+    width: 100%;   
+}
+.header_title{
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+.border_at_bottom{
+    border-bottom: 1px solid black;
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0px;
+    margin-top: 5px;
+    border: 0px;
+}
+.messages_button{
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+/*Bottom Navbar*/
+
+.bottom-navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.bottom-nav-left-button{
+    color:black;
+    background-color: #a5a5a5;
+}
+.bottom-nav-right-button{
+    color:black;
+    background-color: #a5a5a5;
+}
+.bottom-nav-middle-button{
+    color:black;
+    background-color: #e0e0e0;
+}
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*Ride Window*/
+.ride-window{
+    background-color: white;
+    border-radius: 40px;
+    width: 100%; 
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.info-name{
+    text-align: right;
+}
+.information{
+    text-align: left;
+}
+.review-button{
+    border-radius: 40px;
+    background-color: #93D8A2;
+    font-size: 16px;
+    border: none;
+    padding: 3px 15px 3px 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+}

@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            
+        <p class="Montserrat text-center ">{{{message}}}</p>
+        </div>
+    </div>
+</div>
+{{#each reviews}}
+<br>
+    <div class="container-fluid pad0 marg0">
+        <div class="row review marg0 pad0">
+
+            <div class="col-2">
+                <p class="reviewer Montserrat">
+                    Passenger:
+                    <br> 
+                    <button class="Montserrat information profiles driver" data-driver-id={{{this.id}}}">{{{this.name}}} </button>
+                </p>
+            </div>
+            
+            <div class="col-4">
+                <p class="score Montserrat"> Review Score: <br>{{{this.reviewScore}}}/5</p>
+            </div>
+            <div class="col">
+                <p class="revText Montserrat">User Said:<br>{{{this.reviewText}}}</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row review-margin pad0">
+        </div>
+    </div>
+{{/each}}

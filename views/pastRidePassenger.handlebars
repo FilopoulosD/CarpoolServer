@@ -1,0 +1,57 @@
+<!--Ride Info-->
+{{#each ride}}
+
+    <div class="container-fluid marg0 pad0 ride-window">
+        <div class="row marg0">
+            <di class="col-6">
+                <p class="Montserrat info-name">Date :</p>
+            </di>
+            <div class="col-6">
+                <p class="Montserrat information">{{{this.timeAndDate}}}</p>
+            </div>
+        </div>
+        <div class="row marg0">
+            <div class="col-6">
+                <p class="Montserrat info-name">From :</p>
+            </div>
+            <div class="col-6">
+                <p class="Montserrat information">{{{this.startingPoint}}}</p>
+            </div>
+        </div>
+        <div class="row marg0">
+            <div class="col-6">
+                <p class="Montserrat info-name">To :</p>
+            </div>
+            <div class="col-6">
+                <p class="Montserrat information">{{{this.destination}}}</p>
+            </div>
+        </div>
+{{/each}}
+{{#each driver}}
+        <div class="row marg0">
+            <di class="col-6">
+                <p class="Montserrat info-name">Driver Name:</p>
+            </di>
+            <div class="col-6">
+                <button class="Montserrat information profiles driver" data-driver-id={{{this.id}}}>{{{this.name}}}</button>
+            </div>
+        </div>
+{{/each}}
+        <div class="row marg0">
+            <div class="row marg0">
+                <di class="col-6">
+                    <p class="Montserrat info-name">Passenger Names:</p>
+                </di>
+                <div class="col-6"  id="passengerCont">
+                    {{#each passenger}}
+                    <button class="Montserrat information profiles passengers" data-passenger-id={{{this.id}}}>{{{this.name}}}</button> <br>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        {{#each ride}}
+            <div class="col text-center">
+                <button id="review" class="btn rounded-pill review-button Montserrat">Review Ride</button>
+            </div>
+        {{/each}}
+    </div>

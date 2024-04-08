@@ -1,0 +1,32 @@
+<!--Login Menu-->
+<div class="container-fluid login">
+        <div class="row">
+            <div class="col ">
+                <p class="Montserrat welcome">Welcome to Commuter!</p>
+            </div>
+        </div>
+
+        <p class="Montserrat alert">{{{message}}}</p>
+        
+        <div class="row text-center">
+            <form action="/login" method="post" id="loginForm">
+                <div class="form-group marg0">
+                    <p class="form-input Montserrat">Email address</p>
+                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                    <p class="form-input Montserrat">Password</p>
+                    <input type="password" class="form-control" name="password" id="Password" placeholder="Password">
+                </div>
+                 <button type="submit" value="Login" class="btn btn-secondary submit-button block Montserrat" role="button" id="loginButton"> Login</button>
+            </form>
+               
+
+            <div class="col">
+                <p class="signup-text Montserrat">Don't have an account?</p>
+                <button class="btn btn-secondary signup-button block Montserrat" onclick="location.href='/signup'" role="button" id="signUpButton">Sign Up</button>
+                
+            </div>
+                
+        </div>
+</div>

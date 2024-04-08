@@ -1,0 +1,35 @@
+<!--Sign Up Menu-->
+
+<div class="container-fluid signup">
+    <div class="row">
+        <div class="col ">
+            <p class="Montserrat register-message">Register to Commuter!</p>
+        </div>
+    </div>
+    <div class="row text-center">
+        <p class="Montserrat alert">
+            {{{message}}}
+        </p>
+        <form action="/signup" method="post" id="signupForm"> 
+            <div class="form-group ">
+                <p class="form-input Montserrat ">Full Name</p>
+                <input type="name" class="form-control" id="InputName" name="name" placeholder="Enter your full name">
+                <p class="form-input Montserrat ">Email address</p>
+                <input type="email" class="form-control" id="InputEmail" name="email" placeholder="Enter email">
+                <p class="form-input Montserrat">Password</p>
+                <input type="password" class="form-control" id="Password" name="password" placeholder="Password">
+                <p class="form-input Montserrat">Mobile Phone</p>
+                <input type="phone" class="form-control" id="Phone" name="phone" placeholder="Mobile Phone">
+                <p class="form-input Montserrat">Birthday</p>
+                <input type="date" class="form-control" id="Birthday" name="birthdate" placeholder="Birthdate">
+            </div>
+            
+            <button type="submit" class="btn btn-secondary signup-button block Montserrat" value="Sign Up" role="button" id="signupButton"> Signup</button>
+        </form>
+        <div class="col marg0">
+            <p class="signup-text Montserrat marg0">Already have an account?</p>
+            <button class="btn btn-secondary goback-button block Montserrat" id="loginButton" onclick="location.href='/login'" role="button">Go Back</button>
+        </div>
+            
+    </div>
+</div>
